@@ -1,0 +1,151 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("http://www.allwhitebackground.com/images/6/Wood-Background-Photos.jpg");
+    z-index: 1;
+}
+.main{
+    margin-left: 10%;
+    margin-right: 10%;
+    background: white;
+    width: 80%;
+
+}
+.navbar{
+    margin-top: 200px;
+}
+.mail{
+    width: 30%;
+    margin-bottom: 20px;
+}
+figure {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 0!important;
+}
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#fixed {
+    background-image: url('../images/fixedbg.jpg');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+.matula{
+    max-width: 50%;
+    padding-left: 10px;
+}
+.matT{
+    padding-right: 20px;
+    padding-left: 7px;
+}
+#beeDraw{
+  margin-left: 60%;
+    margin-top: 50%;
+}
+.hover {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60%;
+}
+
+.hover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+}
+
+.hover img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.hover-content {
+    position: relative;
+    z-index: 99;
+}
+.hover-3::after {
+    content: '';
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    border: 1px solid #fff;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 90;
+    transition: all 0.3s;
+    transform: scale(1.1);
+    opacity: 0;
+    display: block;
+    opacity: 0;
+}
+
+.hover-3-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 99;
+}
+
+.hover-3-description {
+    opacity: 0;
+    transform: scale(1.3);
+    transition: all 0.3s;
+}
+
+.hover-3 img {
+    width: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hover-3 .hover-overlay {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hover-3:hover img {
+    width: 100%;
+}
+
+.hover-3:hover::after {
+    opacity: 1;
+    transform: none;
+}
+
+.hover-3:hover .hover-3-description {
+    opacity: 1;
+    transform: none;
+}
+
+.hover-3:hover .hover-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
